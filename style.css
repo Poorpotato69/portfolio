@@ -1185,3 +1185,144 @@ footer {
     margin-top: 30px;
   }
 }
+
+
+/* AI Chat Section */
+/* AI Chat Section */
+.ai-chat {
+  margin-bottom: 30px;
+}
+
+.ai-chat-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.ai-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.ai-feature-card {
+  background: rgba(30, 33, 36, 0.6);
+  border-radius: 15px;
+  padding: 25px;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(114, 137, 218, 0.1);
+}
+
+.ai-feature-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary);
+  box-shadow: 0 10px 20px rgba(114, 137, 218, 0.2);
+}
+
+.ai-icon {
+  width: 50px;
+  height: 50px;
+  background: rgba(114, 137, 218, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: var(--primary);
+  margin-bottom: 15px;
+  border: 2px solid var(--primary);
+}
+
+.ai-demo-container {
+  background: rgba(30, 33, 36, 0.4);
+  border-radius: 15px;
+  padding: 20px;
+  border: 1px solid rgba(114, 137, 218, 0.1);
+}
+
+.ai-demo {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.ai-chat-window {
+  flex: 2;
+  background: var(--darker);
+  border-radius: 15px;
+  height: 250px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.ai-messages {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.ai-message {
+  padding: 10px 15px;
+  border-radius: 18px;
+  margin-bottom: 10px;
+  max-width: 80%;
+}
+
+.ai-response {
+  background: rgba(114, 137, 218, 0.1);
+  border-bottom-left-radius: 5px;
+  align-self: flex-start;
+  border: 1px solid rgba(114, 137, 218, 0.2);
+}
+
+.ai-cta {
+  flex: 1;
+  padding: 20px;
+}
+
+.ai-cta h3 {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: var(--light);
+}
+
+.ai-cta p {
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 25px;
+}
+
+.ai-try-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--primary);
+  color: white;
+  padding: 15px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+}
+
+.ai-try-btn:hover {
+  background-color: var(--highlight);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(114, 137, 218, 0.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .ai-demo {
+    flex-direction: column;
+  }
+  
+  .ai-features {
+    grid-template-columns: 1fr;
+  }
+  
+  .ai-chat-window {
+    width: 100%;
+  }
+}
