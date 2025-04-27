@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Poor Potato | Discord Bot & Web Development</title>
+  <meta name="description" content="Affordable Discord bot development and website creation services">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="cursor-trail"></div>
+  <div class="particles"></div>
+  
+  <div class="container">
+    <header class="glass">
+      <div class="header-content">
+        <div class="logo">
+          <div class="potato-icon">
+            <i class="fas fa-robot"></i>
+          </div>
+          <h1>POOR <span>POTATO</span></h1>
+        </div>
+        <p class="tagline">Digital Bot Developer · Web Creator</p>
+        <div class="stats">
+          <div class="stat">
+            <span class="number" data-value="10" data-suffix="+">10+</span>
+            <span class="label">Bots Created</span>
+          </div>
+          <div class="stat">
+            <span class="number" data-value="100" data-suffix="%">100%</span>
+            <span class="label">Satisfaction</span>
+          </div>
+          <div class="stat">
+            <span class="number" data-value="24" data-suffix=" hours">24 hours</span>
+            <span class="label">Support</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="about glass">
+      <h2 class="section-title"><span>//</span> ABOUT ME</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>Hey there! I'm Potato, a passionate Discord bot developer and web creator specializing in affordable, efficient solutions for communities and businesses.</p>
+          <p>With expertise in JavaScript, Python, and web technologies, I build custom bots and websites that help communities thrive and businesses establish their online presence.</p>
+          
+          <div class="languages">
+            <h3>Technical Toolkit:</h3>
+            <div class="language-tags">
+              <span class="language-tag"><i class="fab fa-js"></i> JavaScript</span>
+              <span class="language-tag"><i class="fab fa-python"></i> Python</span>
+              <span class="language-tag"><i class="fab fa-html5"></i> HTML/CSS</span>
+              <span class="language-tag"><i class="fab fa-node-js"></i> Node.js</span>
+              <span class="language-tag"><i class="fas fa-database"></i> MongoDB</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-image">
+          <div class="code-snippet">
+            <div class="code-header">
+              <span class="red"></span>
+              <span class="yellow"></span>
+              <span class="green"></span>
+              <span class="title">bot.js</span>
+            </div>
+            <pre><code class="language-javascript">const { Client, EmbedBuilder } = require('discord.js');
+const client = new Client({ intents: ['GUILDS', 'GUILD_MESSAGES'] });
+
+client.on('messageCreate', message => {
+  if (message.content === '!ping') {
+    message.reply(`Pong! Latency: ${Date.now() - message.createdTimestamp}ms`);
+  }
+
+  if (message.content === '!serverinfo') {
+    const embed = new EmbedBuilder()
+      .setTitle('Server Information')
+      .addFields(
+        { name: 'Members', value: `${message.guild.memberCount}` },
+        { name: 'Created', value: `${message.guild.createdAt.toDateString()}` }
+      );
+    message.channel.send({ embeds: [embed] });
+  }
+});
+
+client.login('YOUR_TOKEN');
+</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services glass">
+      <h2 class="section-title"><span>//</span> MY SERVICES</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fab fa-discord"></i>
+          </div>
+          <h3>Discord Bot Development</h3>
+          <div class="price-tag">$5/month <span class="free-badge">FREE during beta</span></div>
+          <ul class="service-features">
+            <li><i class="fas fa-check-circle"></i> 24/7 reliable hosting</li>
+            <li><i class="fas fa-check-circle"></i> Free maintenance & updates</li>
+            <li><i class="fas fa-check-circle"></i> Custom commands & features</li>
+            <li><i class="fas fa-check-circle"></i> Role management systems</li>
+            <li><i class="fas fa-check-circle"></i> Moderation tools</li>
+          </ul>
+          <p class="service-note"><i class="fas fa-lightbulb"></i> You provide the ideas, I'll handle the implementation!</p>
+        </div>
+        
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-code"></i>
+          </div>
+          <h3>Web Development</h3>
+          <div class="price-tag">$5/month</div>
+          <ul class="service-features">
+            <li><i class="fas fa-check-circle"></i> Responsive design</li>
+            <li><i class="fas fa-check-circle"></i> Basic hosting included</li>
+            <li><i class="fas fa-check-circle"></i> Clean, modern UI</li>
+            <li><i class="fas fa-check-circle"></i> Fast loading times</li>
+            <li><i class="fas fa-check-circle"></i> SEO friendly</li>
+          </ul>
+          <p class="service-note"><i class="fas fa-lightbulb"></i> Perfect for portfolios, small businesses, and communities</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects glass">
+      <h2 class="section-title"><span>//</span> SHOWCASE</h2>
+      <div class="projects-grid">
+        <div class="project-card animate">
+          <div class="project-header">
+            <img src="https://cdn.discordapp.com/icons/1300614131501760522/18bdd3b9b772ca33c20ae97b9fadae0b.png?size=4096" alt="Florida State Roleplay" class="project-logo">
+            <div class="project-info">
+              <h3>Florida State Roleplay</h3>
+              <div class="project-meta">
+                <span><i class="fas fa-users"></i> 1,512 members</span>
+                <span><i class="fas fa-crown"></i> Owner: 2tonbeast</span>
+              </div>
+            </div>
+          </div>
+          <img src="https://cdn.discordapp.com/banners/1300614131501760522/53ae7c6b1ca0524f4f0dd3fab23403c9.png?size=256" alt="Florida State Roleplay Banner" class="project-banner">
+          <div class="project-details">
+            <div class="project-description">
+              <h4><i class="fas fa-tasks"></i> My Contributions:</h4>
+              <ul>
+                <li>Custom Discord bot with moderation tools, staff management commands/tools, session commands/tools, and role management for ERLC server</li>
+              </ul>
+            </div>
+            
+            <div class="feedback">
+              <i class="fas fa-quote-left"></i>
+              <p>Satisfied</p>
+              <div class="client-info">
+                <span>- 2tonbeast (Server Owner)</span>
+              </div>
+              <i class="fas fa-quote-right"></i>
+            </div>
+            
+            <a href="https://discord.gg/EbaFxgH4BZ" class="project-link" target="_blank">
+              <i class="fab fa-discord"></i> Join Server
+            </a>
+          </div>
+        </div>
+        
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon">
+              <i class="fas fa-id-card"></i>
+            </div>
+            <div class="project-info">
+              <h3>Personal Card Website</h3>
+              <div class="project-meta">
+                <span><i class="fas fa-calendar-alt"></i> Updated monthly</span>
+                <span><i class="fas fa-tachometer-alt"></i> 99.9% uptime</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-details">
+            <div class="project-description">
+              <h4><i class="fas fa-tasks"></i> Features:</h4>
+              <ul>
+                <li>Responsive design</li>
+                <li>Social media integration</li>
+                <li>Contact information</li>
+                <li>Service showcase</li>
+              </ul>
+            </div>
+            
+            <a href="https://card.poorpotato.fun/" class="project-link" target="_blank">
+              <i class="fas fa-external-link-alt"></i> Visit Live Site
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact glass">
+      <h2 class="section-title"><span>//</span> LET'S CONNECT</h2>
+      <div class="contact-content">
+        <p>Ready to discuss your project or need a custom solution for your community?</p>
+        
+        <div class="contact-methods">
+          <a href="https://discord.com/users/1131540483080994996" class="contact-btn discord">
+            <i class="fab fa-discord"></i> Message on Discord
+          </a>
+          
+          <div class="contact-info">
+            <p><i class="fas fa-clock"></i> <strong>Availability:</strong> Mon-Fri, 9AM-5PM EST</p>
+            <p><i class="fas fa-reply"></i> <strong>Response Time:</strong> Usually within 24 hours</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="glass">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <div class="potato-icon small">
+            <i class="fas fa-robot"></i>
+          </div>
+          <span>POOR POTATO</span>
+        </div>
+      </div>
+      <p class="copyright">© <span id="year"></span> Poor Potato. All rights reserved.</p>
+      <p class="footer-note">Coding solutions at potato prices 🥔</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
